@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Rats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+
+        <div class="logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Cyber Rats">
+        </div>
+
+        <nav class="menu">
+            <a href="{{ url_for('home') }}">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="{{ url_for('dashboard') }}">Monitoramento</a>
+        </nav>
+
+        <div class="actions">
+            <a href="{{ url_for('login') }}" class="login">Login</a>
+            <a href="{{ url_for('contato') }}" class="btn">Fale conosco</a>
+        </div>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Protegendo sua empresa contra ameaças digitais</h1>
+        <p>Soluções avançadas em cibersegurança para empresas modernas</p>
+        <a href="{{ url_for('contato') }}" class="hero-btn">Fale com um especialista</a>
+    </div>
+</section>
+
+<section id="sobre">
+    <h2>Sobre nós</h2>
+    <p>
+        Somos uma empresa de cibersegurança dedicada a proteger ativos digitais e garantir a continuidade dos negócios 
+        em um cenário de ameaças constantes. Combinamos tecnologia, expertise e inteligência estratégica para antecipar 
+        riscos, neutralizar ataques e fortalecer a segurança das organizações.
+    </p>
+</section>
+
+<section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+        <li>Análise de vulnerabilidades</li>
+        <li>Proteção contra phishing</li>
+        <li>Segurança em ERP e CRM</li>
+        <li>Consultoria em Segurança</li>
+    </ul>
+</section>
+
+</body>
+</html>

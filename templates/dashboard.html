@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard CyberRats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>CyberRats 🔐 | Monitoramento - Essence Beauty</h2>
+</nav>
+
+<div class="cards">
+    <div class="card green">Total: {{ total }}</div>
+    <div class="card orange">Suspeitos: {{ suspeitos }}</div>
+    <div class="card red">Críticos: {{ criticos }}</div>
+</div>
+
+<a href="{{ url_for('simular') }}">
+    <button class="btn">Simular Acesso</button>
+</a>
+
+<table>
+    <tr>
+        <th>Usuário</th>
+        <th>Data</th>
+        <th>Local</th>
+        <th>Status</th>
+    </tr>
+
+    {% for log in logs %}
+    <tr>
+        <td>{{ log[0] }}</td>
+        <td>{{ log[1] }}</td>
+        <td>{{ log[2] }}</td>
+        <td>{{ log[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

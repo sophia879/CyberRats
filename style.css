@@ -1,0 +1,279 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* CONTAINER GLOBAL */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* HEADER */
+.header {
+    background: #020617;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* LOGO */
+.logo img {
+    height: 90px;
+}
+
+/* MENU */
+.menu a {
+    margin: 0 15px;
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #60a5fa;
+}
+
+/* ACTIONS (botões à direita) */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.login {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn {
+    background: linear-gradient(90deg, #0ea5e9, #6366f1);
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin: 20px 0;
+    color: #94a3b8;
+}
+
+/* BOTÃO HERO */
+.hero-btn {
+    background: linear-gradient(90deg, #0ea5e9, #6366f1);
+    padding: 12px 20px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    opacity: 0.85;
+}
+
+/* SEÇÕES GERAIS */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* LISTA DE SERVIÇOS */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #cbd5f5;
+}
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    width: 100%;
+    background: #020617;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: #0f172a;
+    color: white;
+}
+
+.privacy-text {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #0f172a;
+    color: white;
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: #94a3b8;
+}
+
+/* DASHBOARD */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #020617;
+    padding: 15px;
+}
+
+/* CARDS */
+.cards {
+    margin: 20px;
+}
+
+.card {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    min-width: 120px;
+}
+
+.green { background: #22c55e; }
+.orange { background: #f59e0b; }
+.red { background: #ef4444; }
+
+/* BOTÃO */
+.btn {
+    padding: 10px 20px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    margin: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* TABELA */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: white;
+    color: black;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
